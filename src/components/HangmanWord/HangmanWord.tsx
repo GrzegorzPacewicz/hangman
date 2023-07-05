@@ -18,7 +18,6 @@ const HangmanWord = () => {
                     >
                         {letter}
                     </HiddenLetter>
-
                 </Letter>
             ))}
         </Container>
