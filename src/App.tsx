@@ -1,17 +1,19 @@
 import { useState } from 'react';
+import {Wrapper} from "./styled"
 import words from "./components/wordList.json"
 
 function App() {
+
  const [wordToGuess, setWordToGuess] = useState(() =>{
      return words[Math.floor(Math.random() * words.length)]
     })
 
-    console.log(wordToGuess);
+const [guessedLetters, setGuessedLetters] = useState<string[]>([]);
 
   return (
-    <div>
+    <Wrapper>
       Hello world!
-    </div>
+    </Wrapper>
   )
 }
 
