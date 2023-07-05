@@ -1,8 +1,6 @@
-import React from 'react';
 import {Body, Bottom, Container, Hack, Head, LeftArm, LeftLeg, Line, RightArm, RightLeg, Top} from "./styled";
 
-// const HEAD = (Head);
-const HangmanDrawing = (HEAD) => {
+const HangmanDrawing = () => {
     return (
         <Container>
             <Head/>

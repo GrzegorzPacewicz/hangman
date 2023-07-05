@@ -90,7 +90,7 @@ export const LeftLeg = styled.div`
  background-color: black;
   position: absolute;
   top: 210px;
-  right: 0px;
+  right: 0;
   rotate: -60deg;
   transform-origin: right bottom;
 `;
