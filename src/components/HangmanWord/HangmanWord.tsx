@@ -1,23 +1,25 @@
 import React from 'react';
 import {Container, HiddenLetter, Letter} from "./styled";
 
-const HangmanWord = () => {
+type HangmanWordProps = {
+    guessedLetters: string[]
+    wordToGuess: string
+}
 
-    const word = "test"
-    const guessedLetters = ["e", "g", "s"]
+const HangmanWord = ({guessedLetters, wordToGuess }:HangmanWordProps) => {
 
     return (
         <Container>
-            {word.split("").map((letter, index) => (
+            {wordToGuess.split("").map((letter, index) => (
                 <Letter key={index}>
-                    <HiddenLetter style={{
+                    <span style={{
                         visibility: guessedLetters.includes(letter)
                             ? "visible"
                             : "hidden"
                     }}
                     >
                         {letter}
-                    </HiddenLetter>
+                    </span>
                 </Letter>
             ))}
         </Container>
