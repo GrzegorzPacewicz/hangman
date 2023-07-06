@@ -9,6 +9,10 @@ export const Wrapper = styled.div`
   align-items: center;
 `;
 
+export const KeyboardContainer = styled.div`
+  align-self: stretch;
+`;
+
 export const Text = styled.div`
   font-size: 2rem;
   text-align: center;

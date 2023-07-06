@@ -1,9 +1,9 @@
 import {useState} from 'react';
-import {Text, Wrapper} from "./styled"
+import {KeyboardContainer, Text, Wrapper} from "./styled"
 import words from "./components/wordList.json"
 import HangmanDrawing from "./components/HangmanDrawing/HangmanDrawing";
 import HangmanWord from "./components/HangmanWord/HangmanWord";
-import Keybord from "./components/Keybord";
+import Keyboard from "./components/Keyboard/Keyboard";
 
 function App() {
 
@@ -20,7 +20,9 @@ function App() {
             </Text>
             <HangmanDrawing/>
             <HangmanWord/>
-            <Keybord/>
+            <KeyboardContainer>
+                <Keyboard/>
+            </KeyboardContainer>
         </Wrapper>
     )
 }
