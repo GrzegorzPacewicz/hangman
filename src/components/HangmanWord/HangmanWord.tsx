@@ -4,7 +4,7 @@ import {Container, HiddenLetter, Letter} from "./styled";
 const HangmanWord = () => {
 
     const word = "test"
-    const guessedLetters = ["e", "g", "t", "s"]
+    const guessedLetters = ["e", "g", "s"]
 
     return (
         <Container>
