@@ -7,6 +7,7 @@ export const Wrapper = styled.div`
   flex-direction: column;
   gap: 2rem;
   align-items: center;
+  transform: scale(0.8);
 `;
 
 export const KeyboardContainer = styled.div`
