@@ -1,16 +1,29 @@
 import React from 'react';
 import {Keys} from "./Keys";
-import {Container, KeyButton} from "./styled";
+import {Container} from "./styled";
+import styles from "./Keyboard.module.css"
 
-const Keyboard = () => {
+type KeyboardProps = {
+    activeLetters: string[]
+    inactiveLetters: string[]
+    addGuessedLetter: (letter: string) => void
+}
+
+const Keyboard = ({activeLetters, inactiveLetters, addGuessedLetter}: KeyboardProps) => {
     return (
-       <Container>
-           {Keys.map(key =>{
-               return(
-                   <KeyButton key={key}>{key}</KeyButton>
-               )
-           })}
-       </Container>
+        <Container>
+            {Keys.map(key => {
+                return (
+                    <button
+                        onClick={() => addGuessedLetter(key)}
+                        className={`${styles.btn}`}
+                        key={key}
+                    >
+                        {key}
+                    </button>
+                )
+            })}
+        </Container>
     );
 };
 

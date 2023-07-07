@@ -1,5 +1,5 @@
-import { useCallback, useEffect, useState } from 'react';
-import { KeyboardContainer, Text, Wrapper } from "./styled"
+import {useCallback, useEffect, useState} from 'react';
+import {KeyboardContainer, Text, Wrapper} from "./styled"
 import words from "./components/wordList.json"
 import HangmanDrawing from "./components/HangmanDrawing/HangmanDrawing";
 import HangmanWord from "./components/HangmanWord/HangmanWord";
@@ -45,7 +45,11 @@ function App() {
             <HangmanDrawing numberOfGuesses={incorrectLetters.length}/>
             <HangmanWord guessedLetters={guessedLetters} wordToGuess={wordToGuess}/>
             <KeyboardContainer>
-                <Keyboard/>
+                <Keyboard activeLetters={guessedLetters.filter(letter =>
+                    wordToGuess.includes(letter))}
+                          inactiveLetters={incorrectLetters}
+                          addGuessedLetter={addGuessedLetter}
+                 />
             </KeyboardContainer>
         </Wrapper>
     )
