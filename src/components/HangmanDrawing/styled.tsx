@@ -54,7 +54,7 @@ export const Body = styled.div`
 export const RightArm = styled.div`
   height: 10px;
   width: 100px;
- background-color: black;
+  background-color: black;
   position: absolute;
   top: 150px;
   right: -100px;
@@ -65,7 +65,7 @@ export const RightArm = styled.div`
 export const LeftArm = styled.div`
   height: 10px;
   width: 100px;
- background-color: black;
+  background-color: black;
   position: absolute;
   top: 150px;
   right: 10px;
@@ -76,7 +76,7 @@ export const LeftArm = styled.div`
 export const RightLeg = styled.div`
   height: 10px;
   width: 100px;
- background-color: black;
+  background-color: black;
   position: absolute;
   top: 210px;
   right: -90px;
@@ -87,7 +87,7 @@ export const RightLeg = styled.div`
 export const LeftLeg = styled.div`
   height: 10px;
   width: 100px;
- background-color: black;
+  background-color: black;
   position: absolute;
   top: 210px;
   right: 0;
