@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   gap: .25em;
-  font-size: 6rem;
+  font-size: 4rem;
   font-weight: bold;
   text-transform: uppercase;
   font-family: monospace;

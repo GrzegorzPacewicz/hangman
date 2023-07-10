@@ -21,7 +21,7 @@ export const Top = styled.div`
 `;
 
 export const Line = styled.div`
-  height: 400px;
+  height: 340px;
   width: 10px;
   background-color: black;
   margin-left: 120px;
