@@ -1,6 +1,6 @@
 import React from 'react';
 import {Keys} from "./Keys";
-import {Container} from "./styled";
+import {Container, StyledButton} from "./styled";
 import styles from "./Keyboard.module.css"
 
 type KeyboardProps = {
@@ -17,7 +17,7 @@ const Keyboard = ({activeLetters, inactiveLetters, addGuessedLetter, disabled = 
                 const isActive = activeLetters.includes(key)
                 const isInactive = inactiveLetters.includes(key)
                 return (
-                    <button
+                    <StyledButton
                         onClick={() => addGuessedLetter(key)}
                         className={`${styles.btn} ${isActive ? styles.active : ""}
                          ${isInactive ? styles.inactive : ""
@@ -27,7 +27,7 @@ const Keyboard = ({activeLetters, inactiveLetters, addGuessedLetter, disabled = 
                         key={key}
                     >
                         {key}
-                    </button>
+                    </StyledButton>
                 )
             })}
         </Container>
