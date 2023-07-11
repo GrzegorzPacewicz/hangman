@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 
 export const Container = styled.div`
   display: grid;
@@ -12,7 +12,7 @@ export const StyledButton = styled.button`
   aspect-ratio: 1/1;
   border: 3px solid black;
   background: none;
-  font-size:2rem;
+  font-size: 2rem;
   font-weight: bold;
   text-transform: uppercase;
   padding: .2rem;
@@ -23,4 +23,16 @@ export const StyledButton = styled.button`
   &:focus:not(:disabled) {
     background-color: hsl(200, 100%, 75%);
   }
-`;
+  `;
+
+  // ${({disabled}) =>
+  //     disabled && css`
+  //           opacity: .3;
+  //         `}
+  //
+  // ${({ active }) =>
+  //         active && css`
+  //           background-color: hsl(200, 100%, 50%);
+  //           color: white;
+  //         `}
+
