@@ -19,10 +19,11 @@ const Keyboard = ({activeLetters, inactiveLetters, addGuessedLetter, disabled = 
                 return (
                     <StyledButton
                         onClick={() => addGuessedLetter(key)}
-                        className={`${isActive ? styles.active : ""}
+                        className={`${styles.btn} ${isActive ? styles.active : ""}
                          ${isInactive ? styles.inactive : ""
                         }`}
-                        disabled={isActive || isInactive || disabled}
+                        disabled={isActive || isInactive || disabled
+                    }
                         key={key}
                     >
                         {key}
