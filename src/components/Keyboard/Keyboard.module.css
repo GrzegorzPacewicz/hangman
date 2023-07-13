@@ -1,8 +1,8 @@
-.btn.inactive {
+.inactive {
     opacity: .3;
 }
 
-.btn.active {
+.active {
     background-color: hsl(200, 100%, 50%);
     color: white;
 }
