@@ -10,7 +10,7 @@ export const Container = styled.div`
 `;
 
 export const Letter = styled.span`
-  border-bottom: .1em solid black;
+  border-bottom: .1em solid white;
 `;
 
 export const HiddenLetter = styled.span`

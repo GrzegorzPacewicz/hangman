@@ -19,4 +19,5 @@ export const Text = styled.div`
   text-align: center;
   height: 3rem;
   font-weight: bold;
+  color: white;
 `;

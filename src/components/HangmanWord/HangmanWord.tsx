@@ -17,7 +17,7 @@ const HangmanWord = ({guessedLetters, wordToGuess, reveal = false }:HangmanWordP
                         visibility: guessedLetters.includes(letter) || reveal
                             ? "visible"
                             : "hidden",
-                            color: !guessedLetters.includes(letter) && reveal ?"red" : "black"
+                            color: !guessedLetters.includes(letter) && reveal ?"red" : "hsl(200, 100%, 50%)"
                     }}
                     >
                         {letter}

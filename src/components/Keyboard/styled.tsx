@@ -10,14 +10,14 @@ export const Container = styled.div`
 export const StyledButton = styled.button`
   width: 100%;
   aspect-ratio: 1/1;
-  border: 3px solid black;
+  border: 3px solid white;
   background: none;
   font-size: 2rem;
   font-weight: bold;
   text-transform: uppercase;
   padding: .2rem;
   cursor: pointer;
-  color: black;
+  color: white;
 
   &:hover:not(:disabled),
   &:focus:not(:disabled) {

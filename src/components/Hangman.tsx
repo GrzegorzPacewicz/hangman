@@ -1,5 +1,5 @@
 import {useCallback, useEffect, useState} from 'react';
-import {KeyboardContainer, Text, Wrapper} from "../styled"
+import {KeyboardContainer, Text, Wrapper} from "./styled"
 import words from "./wordList.json"
 import HangmanDrawing from "./HangmanDrawing/HangmanDrawing";
 import HangmanWord from "./HangmanWord/HangmanWord";
