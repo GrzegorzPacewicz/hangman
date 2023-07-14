@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container, HiddenLetter, Letter} from "./styled";
+import {Container, Letter} from "./styled";
 
 type HangmanWordProps = {
     guessedLetters: string[]
